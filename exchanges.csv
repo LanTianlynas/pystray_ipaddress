@@ -1,0 +1,19 @@
+code,name,category
+eth,以太币,CRYPTO
+usdt,泰达币,CRYPTO
+ine,上海国际能源交易中心,GLOBAL_FUTURE
+usdc,美元币,CRYPTO
+husd,火币HUSD,CRYPTO
+usdd,USDD算法稳定币,CRYPTO
+ht,火币积分,CRYPTO
+euroc,欧元币,CRYPTO
+rub,RUB币,CRYPTO
+eur,欧元,CRYPTO
+uah,乌克兰赫里纳,CRYPTO
+tusd,TUSD,CRYPTO
+brl,巴西雷亚尔,CRYPTO
+gbp,英镑,CRYPTO
+pyusd,Paypal USD,CRYPTO
+try,土耳其里拉,CRYPTO
+ustc,TerraClassicUSD,CRYPTO
+trx,波场币,CRYPTO

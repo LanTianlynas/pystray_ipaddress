@@ -1,0 +1,12 @@
+# import pandas as pd
+# data = pd.read_csv("exchanges.csv").to_dict(orient='records')
+# print(data)
+data = [{'code': 'eth', 'name': '以太币', 'category': 'CRYPTO'}, {'code': 'usdt', 'name': '泰达币', 'category': 'CRYPTO'}, {'code': 'ine', 'name': '上海国际能源交易中心', 'category': 'GLOBAL_FUTURE'}, {'code': 'usdc', 'name': '美元币', 'category': 'CRYPTO'}, {'code': 'husd', 'name': '火币HUSD', 'category': 'CRYPTO'}, {'code': 'usdd', 'name': 'USDD算法稳定币', 'category': 'CRYPTO'}, {'code': 'ht', 'name': '火币积分', 'category': 'CRYPTO'}, {'code': 'euroc', 'name': '欧元币', 'category': 'CRYPTO'}, {'code': 'rub', 'name': 'RUB币', 'category': 'CRYPTO'}, {'code': 'eur', 'name': '欧元', 'category': 'CRYPTO'}, {'code': 'uah', 'name': '乌克兰赫里纳', 'category': 'CRYPTO'}, {'code': 'tusd', 'name': 'TUSD', 'category': 'CRYPTO'}, {'code': 'brl', 'name': '巴西雷亚尔', 'category': 'CRYPTO'}, {'code': 'gbp', 'name': '英镑', 'category': 'CRYPTO'}, {'code': 'pyusd', 'name': 'Paypal USD', 'category': 'CRYPTO'}, {'code': 'try', 'name': '土耳其里拉', 'category': 'CRYPTO'}, {'code': 'ustc', 'name': 'TerraClassicUSD', 'category': 'CRYPTO'}, {'code': 'trx', 'name': '波场币', 'category': 'CRYPTO'}]
+
+for datum in data:
+    exchange = Exchange()
+    exchange.name = datum['name']
+    exchange.code = datum['code']
+    exchange.category = datum['category']
+    db.session.add(exchange)
+    db.session.commit()

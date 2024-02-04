@@ -14,6 +14,7 @@ def get_ip_info():
             print(f"Error fetching IP info: {e}")
             return "", "unknown"
 
+
 def create_image(country_code):
     if country_code:
         flag_path = f"{FLAGS_FOLDER_PATH}/{country_code}.png"
@@ -26,13 +27,15 @@ def create_image(country_code):
     print("No country code provided")
     return create_placeholder_image()
 
+
 def create_placeholder_image():
     img = Image.new('RGB', (64, 32), color="white")
     d = ImageDraw.Draw(img)
     fnt = ImageFont.load_default()
     d.text((10,10), "No Flag", font=fnt, fill="black")
     return img
-    
+
+
 def update_icon(icon, stop_event):
     while not stop_event.is_set():
         country_code, ip = get_ip_info()
@@ -43,6 +46,7 @@ def update_icon(icon, stop_event):
         else:
             print(f"Error creating flag for country code: {country_code}")
         time.sleep(2)
+
 
 def exit_action(icon, stop_event):
     print("Exiting...")
