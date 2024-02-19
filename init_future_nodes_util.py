@@ -2611,12 +2611,31 @@ class FutureNodeUtil:
         ]
         symbol_list = []
         for row in table:
-            symbol = {"symbol": row["symbol"], "exchange": row["exchange"], "name": row["name"], "trade": row["trade"],
-                      "settlement": "0.00", "presettlement": "0.00", "open": row["open"], "high": row["high"],
-                      "low": row["low"], "close": "0.00", "bidprice1": row["bidprice1"], "askprice1": row["askprice1"],
-                      "bidvol1": "0.00", "askvol1": "0.00", "volume": row["volume"], "position": "0.00", "ticktime": "",
-                      "tradedate": "", "preclose": row["preclose"], "change_percent": "0.02", "bid": "0.00",
-                      "ask": "0.00", "prevsettlement": "0.00", "change": "0.00", "node": "global_qh",
+            symbol = {"symbol": row["symbol"],
+                      "exchange": row["exchange"],
+                      "name": row["name"],
+                      "trade": row["trade"],
+                      "settlement": "0.00",
+                      "presettlement": "0.00",
+                      "open": row["open"],
+                      "high": row["high"],
+                      "low": row["low"],
+                      "close": "0.00",
+                      "bidprice1": row["bidprice1"],
+                      "askprice1": row["askprice1"],
+                      "bidvol1": "0.00",
+                      "askvol1": "0.00",
+                      "volume": row["volume"],
+                      "position": "0.00",
+                      "ticktime": "",
+                      "tradedate": "",
+                      "preclose": row["preclose"],
+                      "change_percent": "0.02",
+                      "bid": "0.00",
+                      "ask": "0.00",
+                      "prevsettlement": "0.00",
+                      "change": "0.00",
+                      "node": "global_qh",
                       "current": "100.00"}
 
             symbol_list.append(symbol)
